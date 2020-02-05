@@ -5,6 +5,7 @@ resolvers += Resolver.url("Rally Plugin Releases", url("https://artifacts.werall
 
 addSbtPlugin("com.rallyhealth" %% "rally-versioning" % "1.8.0")
 addSbtPlugin("com.rallyhealth" %% "rally-sbt-plugin" % "0.18.0")
+addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.6.0")
 
 logLevel := Level.Warn
 
