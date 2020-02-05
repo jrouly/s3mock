@@ -31,7 +31,7 @@ case class CopyObjectMultipart()(implicit provider: Provider) extends LazyLoggin
         meta.setUserMetadata(user)
         meta.setContentType(contentType)
         Some(meta)
-      case Some("COPY") | None => None
+      case Some("COPY") | _ => None
     }
   }
 

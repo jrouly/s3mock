@@ -1,6 +1,6 @@
 name := "s3mock"
 
-version := "0.2.5"
+version := "0.2.6-RALLY"
 
 organization := "io.findify"
 
@@ -41,14 +41,6 @@ libraryDependencies ++= {
 parallelExecution in Test := false
 
 publishMavenStyle := true
-
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-}
 
 pomExtra := (
     <scm>

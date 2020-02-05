@@ -35,7 +35,7 @@ case class CopyObject()(implicit provider: Provider) extends LazyLogging {
         meta.setUserMetadata(user)
         meta.setContentType(contentType)
         Some(meta)
-      case Some("COPY") | None => None
+      case Some("COPY") | _ => None
     }
   }
   def route(destBucket:String, destKey:String) = put {
